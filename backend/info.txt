@@ -1,0 +1,20 @@
+AI has two types of memories short term memory and long term memory 
+short term memory stores information during the current session and long 
+term memory stores even past info long term memory stores information 
+with help of vector database (Rag) Retrieval augmented generation.
+RAG uses numbers. Ai is a large language model
+short term memory is text based and long term memory is vector based.
+websocket is a protocol that creates a connection between client and server
+that does not close untill one of the client or server want it to get closed
+and one of them is down. through this connection server can directly send data 
+to client without client request. it maintains bidirectional communication.
+Applications that need real time communication use web sockets. like whatsapp
+websocket is a protocol and it is implemented by a library socket io.
+socket ai provides event based communication.
+io means whole server socket means a single user.
+there are two types of events
+inbuilt events in socket io => these are of two types connect and disconnect
+custom events
+
+on => event listen krna
+emit => event fire krna
