@@ -7,8 +7,11 @@ const ai = new GoogleGenAI({
 
 async function generateResponse(chatHistory) {
   const response = await ai.models.generateContent({
-    model: "gemini-2.0-flash",
+    model: "gemini-3.5-flash",
     contents: chatHistory,
+    config: {
+      systemInstruction: `give me short answer.`,
+    },
   });
   return response.text;
 }

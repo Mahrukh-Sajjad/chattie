@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./app.css";
 import { io } from "socket.io-client";
+import ReactMarkdown from "react-markdown";
 
 export default function App() {
   const [socket, setSocket] = useState();
@@ -74,7 +75,9 @@ export default function App() {
               }`}
             >
               <div className={`message ${msg.type}`}>
-                <p className="message-text">{msg.text}</p>
+                <div className="message-text">
+                  <ReactMarkdown>{msg.text}</ReactMarkdown>
+                </div>
               </div>
             </div>
           ))
